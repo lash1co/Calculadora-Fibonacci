@@ -4,6 +4,7 @@
     <EntitySetMapping Name="operation">
       <EntityTypeMapping TypeName="geeksBankModel.operation">
         <MappingFragment StoreEntitySet="operation">
+          <ScalarProperty Name="isInFibonacci" ColumnName="isInFibonacci" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="num1" ColumnName="num1" />
           <ScalarProperty Name="num2" ColumnName="num2" />

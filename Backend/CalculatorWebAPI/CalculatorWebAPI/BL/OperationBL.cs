@@ -1,9 +1,5 @@
-﻿using CalculatorWebAPI.Models;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace CalculatorWebAPI.BL
 {
@@ -11,9 +7,10 @@ namespace CalculatorWebAPI.BL
     ///     Modulo aparte con las funciones propias para crear una lista con los valores Fibonacci hasta el ciclo 99999999,
     ///     y luego para buscar si un dato se encuentra en dicha lista
     /// </Modulo>
-    public class OperationBL
+    public class OperationBL: IOperation
     {
-        public List<int> fibonacci() {
+        public List<int> ListaFibonacci()
+        {
             List<int> lista = new List<int>();
             int n1 = 0;
             int n2 = 1;
@@ -45,12 +42,11 @@ namespace CalculatorWebAPI.BL
         
         }
 
-        public bool existeEnFibonacci(int valor) 
+        public bool ExisteEnFibonacci(int valor)
         {
             bool existe = false;
-            var fibo = fibonacci();
-            return existe = fibo.Any(x=> x==valor);
+            var fibo = ListaFibonacci();
+            return existe = fibo.Any(x => x == valor);
         }
-
     }
 }

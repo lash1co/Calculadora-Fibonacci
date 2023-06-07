@@ -8,6 +8,7 @@
     <Property Name="num1" Type="Int32" Nullable="false" />
     <Property Name="num2" Type="Int32" Nullable="false" />
     <Property Name="result" Type="Int32" Nullable="false" />
+    <Property Name="isInFibonacci" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityContainer Name="geeksBankEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="operation" EntityType="Self.operation" />

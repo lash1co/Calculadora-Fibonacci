@@ -8,6 +8,7 @@
     <Property Name="num1" Type="int" Nullable="false" />
     <Property Name="num2" Type="int" Nullable="false" />
     <Property Name="result" Type="int" Nullable="false" />
+    <Property Name="isInFibonacci" Type="bit" Nullable="false" />
   </EntityType>
   <EntityContainer Name="geeksBankModelStoreContainer">
     <EntitySet Name="operation" EntityType="Self.operation" Schema="dbo" store:Type="Tables" />

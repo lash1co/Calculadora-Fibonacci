@@ -18,5 +18,6 @@ namespace CalculatorWebAPI.Models
         public int num1 { get; set; }
         public int num2 { get; set; }
         public int result { get; set; }
+        public bool isInFibonacci { get; set; }
     }
 }

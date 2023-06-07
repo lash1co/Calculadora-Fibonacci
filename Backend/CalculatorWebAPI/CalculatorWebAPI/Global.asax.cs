@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using CalculatorWebAPI.Models;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -14,6 +11,8 @@ namespace CalculatorWebAPI
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            //var connectionString = ConfigurationManager.ConnectionStrings["geeksBankEntities1"];
+            AutofacConfig.Register();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
